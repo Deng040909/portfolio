@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jan Andrei Daguison — Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page">
+ <div class="container">
+
+   <!-- Master Bento Frame enclosing everything -->
+   <section class="master-bento">
+
+     <!-- Header inside the frame -->
+     <header class="header-flat">
+       <img src="profile.JPG" alt="Jan Andrei Daguison" class="avatar">
+       <div class="header-text">
+         <h1>Jan Andrei Daguison</h1>
+         <p class="text-yellow">Full-Stack Developer</p>
+         <p class="location">Taguig, Philippines</p>
+       </div>
+
+       <button id="theme-toggle" class="theme-btn" aria-label="Toggle Light Mode">
+         <span id="theme-text">Light Mode</span>
+       </button>
+     </header>
+
+     <!-- Bento Grid Content -->
+     <div class="bento-top" style="margin-top: 24px;">
+
+       <!-- Left column: stacked cards -->
+       <div class="left-stack">
+
+         <!-- About card -->
+         <section class="card card-about">
+           <h2>About Me</h2>
+           <p>
+             I'm an IT student and developer who loves transforming complex ideas into clean, functional applications. My work spans robust backend logic in Java and C#, database management, and thoughtful UI design. I care deeply about writing efficient code, understanding underlying algorithms, and building practical tools that solve real-world problems.
+           </p>
+         </section>
+
+         <!-- Tech Stack card -->
+         <section class="card">
+           <div class="tech-stack-card">
+             <div class="card-row-head">
+               <h3>Tech Stack</h3>
+               <button class="arrow-btn" data-modal-trigger="tech" aria-label="View tech stack details">&gt;&gt;&gt;</button>
+             </div>
+
+             <p class="tech-category-label">FRONTEND & WEB</p>
+             <div class="tech-badges">
+               <span>HTML</span>
+               <span>CSS</span>
+               <span>JavaScript</span>
+             </div>
+
+             <p class="tech-category-label">BACKEND</p>
+             <div class="tech-badges">
+               <span>Java</span>
+               <span>C#</span>
+               <span>Python</span>
+             </div>
+
+             <p class="tech-category-label">DATABASES</p>
+             <div class="tech-badges">
+               <span>T-SQL</span>
+               <span>MongoDB</span>
+               <span>SQL</span>
+             </div>
+
+             <p class="tech-category-label">DESKTOP & DESIGN</p>
+             <div class="tech-badges">
+               <span>Java Swing</span>
+               <span>Canva</span>
+             </div>
+
+             <p class="tech-category-label">TOOLS & WORKFLOW</p>
+             <div class="tech-badges">
+               <span>Git</span>
+               <span>Docker</span>
+               <span>VS Code</span>
+               <span>Claude</span>
+               <span>Gemini</span>
+             </div>
+           </div>
+         </section>
+
+         <!-- Recent Projects Card Grid -->
+         <section class="card">
+           <div class="card-row-head">
+             <h2>Recent Projects</h2>
+             <button class="arrow-btn" data-modal-trigger="projects" aria-label="View project details">&gt;&gt;&gt;</button>
+           </div>
+
+           <div class="project-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+
+             <div class="project-item" data-modal-trigger="proj1">
+               <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                 <h3 style="font-size: 13.5px; font-weight: 600; color: var(--text-primary);">Drake Album Store</h3>
+                 <div style="display: flex; align-items: center; gap: 6px;">
+                   <span style="font-size: 11px; color: var(--text-secondary);">2026</span>
+                   <span style="font-size: 12px; color: var(--text-secondary);">↗</span>
+                 </div>
+               </div>
+               <p style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">Your ultimate digital destination for Drake's latest releases, and the stories behind the music.</p>
+             </div>
+
+             <div class="project-item" data-modal-trigger="proj2">
+               <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                 <h3 style="font-size: 13.5px; font-weight: 600; color: var(--text-primary);">Prototype Portfolio</h3>
+                 <div style="display: flex; align-items: center; gap: 6px;">
+                   <span style="font-size: 11px; color: var(--text-secondary);">2025</span>
+                   <span style="font-size: 12px; color: var(--text-secondary);">↗</span>
+                 </div>
+               </div>
+               <p style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">Explore an early work-in-progress portfolio prototype and follow along with ongoing creative tech and design builds.</p>
+             </div>
+
+             <div class="project-item" data-modal-trigger="proj3">
+               <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                 <h3 style="font-size: 13.5px; font-weight: 600; color: var(--text-primary);">Finding GOAT</h3>
+                 <div style="display: flex; align-items: center; gap: 6px;">
+                   <span style="font-size: 11px; color: var(--text-secondary);">2025</span>
+                   <span style="font-size: 12px; color: var(--text-secondary);">↗</span>
+                 </div>
+               </div>
+               <p style="font-size: 12px; color: var(--text-secondary); margin-top: 4px;">The ultimate search for the GOAT... but let's be honest, you already knew who it was.</p>
+             </div>
+
+           </div>
+         </section>
+
+         <!-- Certifications Card -->
+         <section class="card card-row">
+           <div class="card-row-head">
+             <h2>Certifications</h2>
+             <button class="arrow-btn" data-modal-trigger="certification" aria-label="View certification details">&gt;&gt;&gt;</button>
+           </div>
+
+           <div class="cert-list">
+             <div class="cert-item" data-modal-trigger="cert1">
+               <h3>HTML Fundamentals</h3>
+               <p class="muted" style="color: #fbbf24;">CodeCred - 2026</p>
+             </div>
+
+             <div class="cert-item" data-modal-trigger="cert2">
+               <h3>"Bridging Electronics and Software: Unleashing the Power of Arduino and Mobile Applications in Action" with the topic of Arduino.</h3>
+               <p class="muted" style="color: #fbbf24;">Emilio Aguinaldo College - Manila 2025</p>
+             </div>
+
+             <div class="cert-item" data-modal-trigger="cert3">
+               <h3>"Bridging Electronics and Software: Unleashing the Power of Arduino and Mobile Applications in Action" with the topic of Mobile Application Development.</h3>
+               <p class="muted" style="color: #fbbf24;">Emilio Aguinaldo College - Manila 2025</p>
+             </div>
+           </div>
+         </section>
+
+       </div>
+
+       <!-- Right column: Experience, then Socials, then Recommendations -->
+       <div class="right-stack">
+
+         <!-- Experience Card -->
+         <section class="card card-experience" data-modal="experience">
+           <div class="card-row-head">
+             <h2>Experience</h2>
+             <button class="arrow-btn" data-modal-trigger="experience" aria-label="View experience details">&gt;&gt;&gt;</button>
+           </div>
+           <ol class="timeline">
+             <li>
+               <span class="timeline-dot"></span>
+               <div>
+                 <h3 class="text-yellow">Senior Backend Engineer</h3>
+                 <p class="muted" style="font-size: 12px; margin-bottom: 6px;">Nomad Finance • 2023 – Present</p>
+                 <p class="muted">Leading the payments infrastructure team across Lagos and Berlin.</p>
+               </div>
+             </li>
+             <li>
+               <span class="timeline-dot"></span>
+               <div>
+                 <h3 class="text-yellow">Backend Engineer</h3>
+                 <p class="muted" style="font-size: 12px; margin-bottom: 6px;">Cowrywise • 2021 – 2023</p>
+                 <p class="muted">Built the savings and investment ledger from the ground up.</p>
+               </div>
+             </li>
+             <li>
+               <span class="timeline-dot"></span>
+               <div>
+                 <h3 class="text-yellow">Software Engineer</h3>
+                 <p class="muted" style="font-size: 12px; margin-bottom: 6px;">Andela • 2019 – 2021</p>
+                 <p class="muted">Embedded with a US client team shipping logistics tooling.</p>
+               </div>
+             </li>
+             <li>
+               <span class="timeline-dot"></span>
+               <div>
+                 <h3 class="text-yellow">Junior Developer</h3>
+                 <p class="muted" style="font-size: 12px; margin-bottom: 6px;">Freelance • 2018 – 2019</p>
+                 <p class="muted">Built small business websites and internal tools.</p>
+               </div>
+             </li>
+           </ol>
+         </section>
+
+         <!-- Socials Card -->
+         <section class="card">
+           <div class="card-row-head">
+             <h2>Socials</h2>
+           </div>
+           <div class="socials-list" style="display: flex; flex-direction: column; gap: 10px;">
+
+             <!-- GitHub -->
+             <a href="https://github.com/deng040909" target="_blank" class="social-item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); border-radius: 8px; text-decoration: none; color: inherit;">
+               <div style="display: flex; align-items: center; gap: 10px;">
+                 <div style="width: 26px; height: 26px; border-radius: 6px; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center;">
+                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                 </div>
+                 <div>
+                   <strong style="font-size: 14px;">GitHub</strong>
+                   <span style="font-size: 12px; color: var(--text-secondary);">@deng040909</span>
+                 </div>
+               </div>
+               <span style="font-size: 13px; color: var(--text-secondary);">↗</span>
+             </a>
+
+             <!-- LinkedIn -->
+             <a href="https://www.linkedin.com/in/jan-andrei-daguison-0612b0438/" target="_blank" class="social-item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); border-radius: 8px; text-decoration: none; color: inherit;">
+               <div style="display: flex; align-items: center; gap: 10px;">
+                 <div style="width: 26px; height: 26px; border-radius: 6px; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center;">
+                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                 </div>
+                 <div>
+                   <strong style="font-size: 14px;">LinkedIn</strong>
+                   <span style="font-size: 12px; color: var(--text-secondary);">Jan Andrei Daguison</span>
+                 </div>
+               </div>
+               <span style="font-size: 13px; color: var(--text-secondary);">↗</span>
+             </a>
+
+             <!-- Facebook -->
+             <a href="https://web.facebook.com/andreidgsn" target="_blank" class="social-item" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 12px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); border-radius: 8px; text-decoration: none; color: inherit;">
+               <div style="display: flex; align-items: center; gap: 10px;">
+                 <div style="width: 26px; height: 26px; border-radius: 6px; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center;">
+                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                 </div>
+                 <div>
+                   <strong style="font-size: 14px;">Facebook</strong>
+                   <span style="font-size: 12px; color: var(--text-secondary);">Jan Andrei Daguison</span>
+                 </div>
+               </div>
+               <span style="font-size: 13px; color: var(--text-secondary);">↗</span>
+             </a>
+
+           </div>
+         </section>
+
+         <!-- Recommendations Card -->
+         <section class="card card-row" data-modal="recommendations">
+           <div class="card-row-head">
+             <h2>Recommendations</h2>
+             <button class="arrow-btn" data-modal-trigger="recommendations" aria-label="View recommendations details">&gt;&gt;&gt;</button>
+           </div>
+
+           <div class="rec-list">
+
+             <div class="rec-item">
+               <p class="rec-quote">"10/10 design. Would trade my Apple ID to hire him."</p>
+               <div class="rec-author">
+                 <img src="john.jpg" alt="John Ternus" class="rec-avatar">
+                 <div>
+                   <strong class="rec-name">John Ternus</strong>
+                   <span class="rec-role">Apple, CEO</span>
+                 </div>
+               </div>
+             </div>
+
+             <div class="rec-item rec-row">
+               <p class="rec-quote">"Builds code faster than Twitter rebrands. Absolute unit."</p>
+               <div class="rec-author">
+                 <img src="musk.jpg" alt="Elon Musk" class="rec-avatar">
+                 <div>
+                   <strong class="rec-name">Elon Musk</strong>
+                   <span class="rec-role">Tesla, CEO</span>
+                 </div>
+               </div>
+             </div>
+
+           </div>
+         </section>
+
+       </div>
+
+     </div>
+
+   </section>
+
+ </div>
+</div>
+
+<div class="modal-overlay" id="modal-overlay">
+ <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+   <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+   <h2 id="modal-title"></h2>
+   <div id="modal-body"></div>
+ </div>
+</div>
+
+<!-- ============ GEMINI CHATBOX ============ -->
+<button id="chat-toggle" aria-label="Open chat">
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2Z"/></svg>
+</button>
+
+<div id="chat-panel">
+ <div class="chat-header">
+   <span>Ask about Andrei</span>
+   <button id="chat-close" aria-label="Close chat">&times;</button>
+ </div>
+ <div id="chat-messages"></div>
+ <form id="chat-form">
+   <input id="chat-input" type="text" placeholder="Ask a question…" autocomplete="off" required>
+   <button type="submit" id="chat-send">&gt;&gt;&gt;</button>
+ </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
